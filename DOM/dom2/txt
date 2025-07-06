@@ -1,0 +1,37 @@
+🚀 What’s New in DOM Level 2?
+DOM Level 2, released by the W3C in the early 2000s, expanded the DOM API with several key modules:
+
+1. Events Module
+Introduced the standard event model with addEventListener() and removeEventListener().
+
+Enabled event capturing and bubbling, giving developers more control over how events propagate.
+
+2. Traversal and Range
+Added methods to navigate the DOM tree more efficiently.
+
+Example: NodeIterator and TreeWalker let you loop through nodes in a structured way.
+
+Range objects allowed you to select and manipulate fragments of the document.
+
+3. Style Module
+Gave access to CSS styles via JavaScript.
+
+Example: element.style.color = "blue" or getComputedStyle(element).
+
+4. Views Module
+Introduced the concept of document views, like defaultView, which refers to the window object.
+
+5. Core Enhancements
+Improved support for namespaces and XML documents.
+
+More robust DOM manipulation methods.
+
+🧪 Example: DOM2 Event Handling
+html
+<button id="clickMe">Click Me</button>
+<script>
+  const btn = document.getElementById("clickMe");
+  btn.addEventListener("click", () => {
+    alert("DOM Level 2 event triggered!");
+  });
+</script>

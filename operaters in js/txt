@@ -1,0 +1,96 @@
+Operaters in js
+
+
+In JavaScript, operators are special symbols or keywords used to perform operations on values (operands). They’re the tools that let you do math, compare values, assign data, and more.
+
+
+
+➕ Arithmetic Operators
+Used for basic math:
+
+Operator	                       Description	                           Example
+
++	                                Addition	                          5 + 2 → 7
+-	                                Subtraction	                          5 - 2 → 3
+*	                              Multiplication                          5 * 2 → 10
+/                               	Division	                          5 / 2 → 2.5
+%	                             Modulus (remainder)	                  5 % 2 → 1
+**	                              Exponentiation	                      2 ** 3 → 8
+++	                               Increment	                             x++
+--	                               Decrement	                             x--
+
+
+
+
+
+
+📝 Assignment Operators
+Used to assign values to variables:
+
+Operator	                         Example	                          Same As
+=	                                 x = 5                                  —
++=                              	x += 2                             	x = x + 2
+-=	                                x -= 2	                            x = x - 2
+*=	                                x *= 2	                            x = x * 2
+/=	                                x /= 2	                            x = x / 2
+%=	                                x %= 2	                            x = x % 2
+
+
+
+
+
+🔍 Comparison Operators
+Used to compare values:
+
+Operator                    	Description                         	Example
+==                         	Equal to (loose)	                    5 == '5' → true
+===	                        Equal value and type	                5 === '5' → false
+!=	                        Not equal (loose)	                    5 != '5' → false
+!==	                        Not equal value or type              	5 !== '5' → true
+>	                        Greater than	                        5 > 3 → true
+<	                        Less than	                            5 < 3 → false
+>=	                       Greater than or equal	                5 >= 5 → true
+<=	                       Less than or equal                    	5 <= 4 → false
+
+
+
+
+🧠 Logical Operators
+Used to combine or invert conditions:
+
+Operator	            Description	                Example
+&&	                   Logical AND	            true && false → false
+`		`	         Logical OR	`true		       false→true`
+!	L                ogical NOT	            !      true → false
+
+
+
+
+
+
+
+
+🧵 String Operators
++ is also used to concatenate strings: "Hello" + " World" → "Hello World"
+
+
+
+
+
+🎯 Ternary Operator
+A shorthand for if...else:
+
+javascript
+let result = (score > 50) ? "Pass" : "Fail";
+
+
+
+
+
+
+
+
+🧪 Type Operators
+typeof: Returns the type of a variable → typeof 42 → "number"
+
+instanceof: Checks if an object is an instance of a class → arr instanceof Array → true

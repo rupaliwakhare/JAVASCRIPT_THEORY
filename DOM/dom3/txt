@@ -1,0 +1,43 @@
+DOM Level 3 was a significant evolution of the Document Object Model, building on the foundations of DOM Levels 1 and 2. It introduced more powerful and flexible tools for developers to interact with web documents—especially XML and HTML.
+
+
+
+🧠 Key Features of DOM Level 3
+1. XPath Support
+Introduced the ability to use XPath expressions to navigate XML documents.
+
+Example: document.evaluate() lets you query nodes using XPath syntax.
+
+2. Load and Save Module
+Enabled loading and saving of documents via the DOM.
+
+Useful for working with XML files in client-side or server-side environments.
+
+3. Keyboard Events
+Added support for keyboard event handling, like keydown, keypress, and keyup.
+
+Provided more detailed information about key inputs (e.g., key codes, modifiers).
+
+4. Text and Range Enhancements
+Improved handling of text nodes, whitespace, and character data.
+
+Enhanced the Range interface for selecting and manipulating parts of a document.
+
+5. Validation and Configuration
+Introduced interfaces for document validation, especially for XML schemas.
+
+Allowed configuration of DOM behavior using DOMConfiguration.
+
+🧪 Example: XPath with DOM3
+javascript
+let result = document.evaluate(
+  "//p[@class='highlight']",
+  document,
+  null,
+  XPathResult.ORDERED_NODE_SNAPSHOT_TYPE,
+  null
+);
+
+for (let i = 0; i < result.snapshotLength; i++) {
+  console.log(result.snapshotItem(i).textContent);
+}

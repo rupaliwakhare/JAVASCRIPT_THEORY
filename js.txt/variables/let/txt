@@ -1,0 +1,41 @@
+In JavaScript, let is a keyword used to declare variables with block scope, introduced in ES6 (2015). It’s a modern alternative to var, offering more predictable behavior—especially in loops and conditional blocks.
+
+🧠 Key Features of let
+Block Scoped: Only accessible within the {} block where it's defined.
+
+Reassignable: You can change its value later.
+
+Not Hoisted Like var: It’s hoisted but not initialized, so accessing it before declaration throws a ReferenceError.
+
+No Redeclaration: You can’t declare the same let variable twice in the same scope.
+
+🧪 Example
+javascript
+let score = 10;
+if (score > 5) {
+  let message = "Great job!";
+  console.log(message); // ✅ Works
+}
+
+
+console.log(message); // ❌ ReferenceError: message is not defined
+
+
+
+
+
+
+
+
+
+
+🔍 Why Use let Over var?
+
+
+
+
+Feature	                         var	                                  let
+Scope	                      Function-scoped                        	Block-scoped
+Redeclaration	                 Allowed                              	Not allowed
+Hoisting	                  Yes (initialized)                   	Yes (uninitialized)
+Use in Loops	               Can cause bugs	                       Safer and cleaner

@@ -1,0 +1,43 @@
+variables in js
+
+
+
+kind of container or box that hold or store data or information.
+
+
+rules of variables
+
+1) variables name must begin within a latter,an underscore(),or a doller sign ($).
+
+2) subsequent catecter can be letter,number,or doller sign($).
+
+3) variables name are case-sensetive (eg.Myvar and myvar are different variable).
+
+4) reserved keyword (like function , class, return, etc) can not be used in variable name.
+
+5) variable name can not contain space.
+
+6) by convention, javascipt variable name are written in camelcase (Eg. MyVariableNme)
+
+7) there has a no limit to the lenght of variable name.
+
+
+
+🧰 How to Declare a Variable
+You can declare variables using three keywords:
+
+Keyword	Scope	Reassignable	Hoisted	Notes
+var	Function	✅ Yes	✅ Yes	Old-school; avoid in modern code
+let	Block	✅ Yes	❌ No	Best for values that change
+const	Block	❌ No	❌ No	Best for constants (but objects can mutate)
+
+
+🧙‍♂️ Why Use Variables?
+Store user input
+
+Track scores, counters, or states
+
+Hold API responses or configuration settings
+
+Make your code reusable and readable
+
