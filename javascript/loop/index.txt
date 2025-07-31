@@ -1,0 +1,174 @@
+In JavaScript, loops are used to execute a block of code repeatedly, either for a specific number of times or until a condition is met. Here are the most common types of loops in JavaScript:
+
+1. for Loop
+Used when the number of iterations is known beforehand.
+
+
+
+for (let i = 0; i < 5; i++) {
+  console.log(`Iteration ${i}`);
+}
+
+
+Explanation:
+let i = 0: Initialize the counter.
+i < 5: Condition to continue the loop.
+i++: Increment the counter after each iteration.
+2. while Loop
+Executes as long as the condition is true.
+
+
+Copy the code
+let count = 0;
+while (count < 5) {
+  console.log(`Count is ${count}`);
+  count++;
+}
+
+
+Explanation:
+The loop checks the condition (count < 5) before each iteration.
+3. do...while Loop
+Executes the code block at least once, then continues as long as the condition is true.
+
+
+Copy the code
+let num = 0;
+do {
+  console.log(`Number is ${num}`);
+  num++;
+} while (num < 5);
+Explanation:
+The code runs once before checking the condition.
+4. for...of Loop
+Used to iterate over iterable objects like arrays, strings, etc.
+
+
+Copy the code
+const fruits = ['apple', 'banana', 'cherry'];
+for (const fruit of fruits) {
+  console.log(fruit);
+}
+Explanation:
+Iterates over the values of the iterable.
+5. for...in Loop
+Used to iterate over the properties of an object.
+
+
+Copy the code
+const person = { name: 'John', age: 30 };
+for (const key in person) {
+  console.log(`${key}: ${person[key]}`);
+}
+Explanation:
+Iterates over the keys of the object.
+6. break and continue
+break: Exits the loop entirely.
+continue: Skips the current iteration and moves to the next.
+
+Copy the code
+for (let i = 0; i < 5; i++) {
+  if (i === 3) break; // Stops the loop when i is 3
+  if (i === 1) continue; // Skips the iteration when i is 1
+  console.log(i);
+}
+
+
+
+orrr
+
+
+
+Loops in JavaScript are like the engine behind repetition—they let you run the same block of code multiple times without writing it over and over. Super handy when working with arrays, user input, or anything repetitive.
+
+🔁 Types of Loops in JavaScript
+
+
+
+
+
+
+
+1. for Loop
+Runs a block of code a specific number of times.
+
+javascript
+for (let i = 0; i < 5; i++) {
+  console.log("Count:", i);
+}
+
+
+
+
+
+2. while Loop
+Keeps running as long as a condition is true.
+
+javascript
+let i = 0;
+while (i < 5) {
+  console.log("While:", i);
+  i++;
+}
+
+
+
+
+
+
+
+3. do...while Loop
+Runs the code at least once, then checks the condition.
+
+javascript
+let i = 0;
+do {
+  console.log("Do While:", i);
+  i++;
+} while (i < 5);
+
+
+
+
+
+
+
+
+4. for...in Loop
+Loops through the keys of an object.
+
+javascript
+const user = { name: "Aarav", age: 25 };
+for (let key in user) {
+  console.log(key, ":", user[key]);
+}
+
+
+
+
+
+
+
+
+
+5. for...of Loop
+Loops through the values of an iterable (like arrays or strings).
+
+javascript
+let colors = ["red", "green", "blue"];
+for (let color of colors) {
+  console.log(color);
+}
+
+
+
+
+
+🧠 When to Use What?
+Loop Type	Best For
+for	Known number of iterations
+while	Unknown number, condition-based
+do...while	At least one guaranteed execution
+for...in	Iterating over object properties
+for...of	Iterating over iterable values (arrays, etc.)
+Loops are the heartbeat of automation in JS. Want to build a loop-powered mini game or explore how to break out of a loop with break or continue

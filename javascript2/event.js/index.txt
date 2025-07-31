@@ -1,0 +1,49 @@
+In JavaScript, an event is something that happens in the browser—like a user clicking a button, pressing a key, or resizing the window—and JavaScript can respond to it. Events are the backbone of interactive web pages.
+
+🎯 What Is an Event?
+An event is a signal that something has occurred. It could be triggered by:
+
+User actions: clicks, key presses, mouse movements
+
+Browser actions: page load, resize, scroll
+
+Form interactions: input changes, submissions, focus/blur
+
+🧠 Common Event Types
+Category	Examples
+Mouse Events	click, dblclick, mouseover, mouseout
+Keyboard Events	keydown, keyup, keypress
+Form Events	submit, change, focus, blur
+Window Events	load, resize, scroll, unload
+🛠️ How to Handle Events
+1. Inline HTML
+html
+<button onclick="alert('Clicked!')">Click Me</button>
+2. DOM Property
+javascript
+const btn = document.getElementById("myBtn");
+btn.onclick = () => alert("Clicked!");
+3. addEventListener (Best Practice)
+javascript
+btn.addEventListener("click", () => {
+  alert("Clicked with addEventListener!");
+});
+🔄 Event Propagation
+Events flow in two phases:
+
+Capturing phase: from the root down to the target
+
+Bubbling phase: from the target back up to the root
+
+You can control this flow using options in addEventListener.
+
+🧪 Example: Mouse & Keyboard
+javascript
+document.addEventListener("mousemove", (e) => {
+  console.log(`Mouse at (${e.clientX}, ${e.clientY})`);
+});
+
+document.addEventListener("keydown", (e) => {
+  console.log(`Key pressed: ${e.key}`);
+});
+Events make your web pages come alive. Want to build a button that changes color on hover or a form that validates in real time

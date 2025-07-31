@@ -1,0 +1,34 @@
+Asynchronous JavaScript is all about making your code non-blocking—so it can do multiple things at once without freezing up the browser. It’s what lets your app stay responsive while waiting for things like data from a server, user input, or timers.
+
+🧠 What Does "Asynchronous" Mean?
+JavaScript is single-threaded, meaning it runs one task at a time. But with asynchronous techniques, it can start a task and move on without waiting for it to finish—then come back to it later when it’s done.
+
+🔧 Common Ways to Handle Asynchronous Code
+Technique	Description
+Callbacks	A function passed into another function to run after a task completes
+Promises	Objects that represent a future value (resolved or rejected)
+async/await	Syntactic sugar over Promises for cleaner, more readable async code
+🧪 Example with setTimeout (a classic async function)
+javascript
+console.log("Start");
+
+setTimeout(() => {
+  console.log("This runs later");
+}, 2000);
+
+console.log("End");
+Output:
+
+Start
+End
+This runs later
+Even though setTimeout is written in the middle, it runs after the rest of the code finishes.
+
+✨ Real-World Use Case: Fetching Data
+javascript
+async function getUser() {
+  const response = await fetch("https://api.example.com/user");
+  const data = await response.json();
+  console.log(data);
+}
+This lets your app stay responsive while waiting for the server to reply.

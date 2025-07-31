@@ -1,0 +1,199 @@
+In JavaScript, an object is a powerful data structure used to store collections of key-value pairs. Think of it like a real-world object—say, a car—which has properties (color, model) and behaviors (start, stop). In JS, objects let you model that kind of structure in code.
+
+🧱 Creating an Object
+
+1. Object Literal (most common)
+
+const person = {
+  name: "Aarav",
+  age: 25,
+  isStudent: true
+};
+
+
+2. Using new Object()
+
+const person = new Object();
+person.name = "Aarav";
+person.age = 25;
+
+
+
+🔍 Accessing Properties
+Dot notation: person.name
+
+Bracket notation: person["age"]
+
+🛠️ Adding & Modifying Properties
+javascript
+person.city = "Mumbai";       // Add
+person.age = 26;              // Modify
+
+
+
+
+❌ Deleting Properties
+
+
+delete person.isStudent;
+
+
+
+
+
+🧠 Why Use Objects?
+To group related data (like a user profile or product info)
+
+To represent real-world entities
+
+To build more complex structures like arrays of objects or nested objects
+
+
+
+🧪 Example with Methods
+javascript
+const car = {
+  brand: "Toyota",
+  start: function() {
+    console.log("Engine started!");
+  }
+};
+
+car.start(); // Output: Engine started!
+Objects are the foundation of most things in JavaScript, including arrays, functions, and even other objects.
+
+
+
+
+
+
+
+
+
+
+
+
+properties
+
+Dot Notation (.)
+
+In JavaScript, dot notation is a simple and readable way to access or modify properties of an object using a literal property name.
+
+🧱 Syntax
+
+javascript
+object.propertyName
+For example:
+
+javascript
+const car = {
+  brand: "Toyota",
+  model: "Camry",
+  year: 2023
+};
+
+console.log(car.brand); // "Toyota"
+car.year = 2024;         // Updates the year
+
+
+
+
+
+
+
+✅ When to Use Dot Notation
+
+When the property name is a valid identifier (no spaces, special characters, or starts with a number).
+
+When you know the property name at the time of writing code.
+
+
+
+⚠️ Limitations
+
+
+
+Dot notation won’t work if:
+
+The property name has spaces or special characters.
+
+The property name is stored in a variable.
+
+In those cases, use bracket notation:
+
+
+
+const key = "model";
+console.log(car[key]); // "Camry"
+
+
+🧠 Quick Comparison
+
+Feature                                    	Dot Notation	                                       Bracket Notation
+Syntax                                       	obj.prop                                             	obj["prop"]
+Dynamic key access	                       ❌ Not supported	                                       ✅ Supported
+Special characters	                       ❌ Not allowed                                          	✅ Allowed
+Readability	                               ✅ Very readable	                                        👌 Slightly less so
+
+
+
+
+Bracket Notation []
+
+
+In JavaScript, bracket notation is a way to access or modify properties of an object using a string or expression inside square brackets. It’s especially useful when the property name is dynamic or not a valid identifier.
+
+🧱 Syntax
+
+object["propertyName"]
+object[expression]
+
+
+
+🧪 Example
+javascript
+const person = {
+  name: "Aarav",
+  age: 25
+};
+
+console.log(person["name"]); // "Aarav"
+
+let key = "age";
+console.log(person[key]);    // 25
+
+
+
+✅ When to Use Bracket Notation
+
+
+
+Dynamic property names (e.g., stored in a variable)
+
+Property names with spaces or special characters
+
+Non-standard identifiers (like "first-name" or "123abc")
+
+javascript
+const data = {
+  "first-name": "Riya",
+  "123abc": true
+};
+
+console.log(data["first-name"]); // "Riya"
+console.log(data["123abc"]);     // true
+
+
+
+🔍 Dot vs Bracket Notation
+
+
+Feature                                   	Dot Notation	                               Bracket Notation
+Syntax                                       	obj.key                                       	obj["key"]
+Dynamic key access	                       ❌ Not supported                               	✅ Supported
+Special characters	                       ❌ Not allowed	                                 ✅ Allowed
+Readability	                                ✅ More readable                               	👌 Slightly less so
+
+
+
+

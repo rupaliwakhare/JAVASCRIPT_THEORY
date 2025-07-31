@@ -1,0 +1,52 @@
+In JavaScript, destructuring is a convenient way to unpack values from arrays or properties from objects into individual variables. It was introduced in ES6 (2015) and makes your code cleaner, shorter, and easier to read.
+
+🧱 Array Destructuring
+javascript
+const colors = ["red", "green", "blue"];
+const [first, second] = colors;
+
+console.log(first);  // "red"
+console.log(second); // "green"
+You can skip items:
+
+javascript
+const [ , , third] = colors; // "blue"
+Use the rest operator to gather remaining items:
+
+javascript
+const [head, ...tail] = colors; // head = "red", tail = ["green", "blue"]
+🧰 Object Destructuring
+javascript
+const user = { name: "Aarav", age: 25 };
+const { name, age } = user;
+
+console.log(name); // "Aarav"
+Rename variables:
+
+javascript
+const { name: userName } = user; // userName = "Aarav"
+Set default values:
+
+javascript
+const { city = "Mumbai" } = user; // city = "Mumbai"
+🧪 Nested Destructuring
+javascript
+const person = {
+  name: "Riya",
+  address: {
+    city: "Pune",
+    zip: 411001
+  }
+};
+
+const {
+  address: { city }
+} = person;
+
+console.log(city); // "Pune"
+🔄 Swapping Variables with Destructuring
+javascript
+let a = 1, b = 2;
+[a, b] = [b, a];
+console.log(a, b); // 2, 1
+Destructuring is like unpacking a suitcase—you grab just what you need, and leave the rest. Want to try destructuring function parameters or explore how it works with default values and rest syntax

@@ -1,0 +1,91 @@
+what is string?
+
+In JavaScript, a string is a sequence of characters used to represent text—like words, sentences, or even emojis. It’s one of the most commonly used data types in web development.
+
+
+
+🧵 How to Create Strings
+You can define strings using:
+
+
+let str1 = "Hello";      // Double quotes
+let str2 = 'World';      // Single quotes
+let str3 = `Hi, ${str1}`; // Template literals (ES6+)
+
+
+
+
+🧠 Key Features
+
+
+Immutable: Once created, the characters in a string can’t be changed directly.
+
+Indexed: Characters are accessed by position (starting at 0).
+
+Length property: Use .length to find how many characters are in a string.
+
+
+let name = "Aarav";
+console.log(name[0]);      // "A"
+console.log(name.length);  // 5
+
+
+
+
+
+
+🛠️ Common String Methods
+
+Method	                                   Description                         	Example
+toUpperCase()	                         Converts to uppercase	         "hello".toUpperCase() → "HELLO"
+toLowerCase()                            Converts to lowercase	         "HELLO".toLowerCase() → "hello"
+includes()                               Checks if substring exists 	 "JavaScript".includes("Script")
+indexOf()                              	 Finds position of substring	  "hello".indexOf("e") → 1
+slice()                                   Extracts part of a string	        "hello".slice(1, 4) → "ell"
+replace()	                              Replaces part of a string	          "Hi there".replace("Hi", "Hey")
+trim()	                                  Removes whitespace from ends         " hello ".trim() → "hello"
+
+
+
+
+
+templete literalin js
+
+In JavaScript, a template literal is a special kind of string that makes it easier to work with dynamic content, especially when embedding variables or writing multi-line strings. It was introduced in ES6 (ECMAScript 2015) and uses backticks (`) instead of single (') or double (") quotes.
+
+🧵 Syntax
+javascript
+let name = "Aarav";
+let greeting = `Hello, ${name}!`;
+console.log(greeting); // Output: Hello, Aarav!
+✨ Key Features
+1. String Interpolation
+Embed variables or expressions directly using ${...}.
+
+javascript
+let a = 5, b = 10;
+console.log(`Sum: ${a + b}`); // Sum: 15
+2. Multi-line Strings
+No need for \n or string concatenation.
+
+javascript
+let poem = `Roses are red,
+Violets are blue,
+JavaScript is awesome,
+And so are you.`;
+3. Expression Evaluation
+You can insert function calls or math inside ${...}.
+
+javascript
+let price = 100;
+let tax = 0.18;
+console.log(`Total: ₹${(price * (1 + tax)).toFixed(2)}`);
+4. Tagged Templates (Advanced)
+Use a function to process the template literal.
+
+javascript
+function shout(strings, value) {
+  return `${strings[0]}${value.toUpperCase()}${strings[1]}`;
+}
+let result = shout`Hello, ${"world"}!`;
+console.log(result); // Hello, WORLD!

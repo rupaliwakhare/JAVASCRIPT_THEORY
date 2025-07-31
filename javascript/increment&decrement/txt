@@ -1,0 +1,37 @@
+In JavaScript, increment (++) and decrement (--) operators are used to increase or decrease a numeric value by 1. They're simple but powerful tools, especially in loops and counters.
+
+🔼 Increment Operator (++)
+Adds 1 to the value of a variable.
+
+Postfix (x++): Returns the value before incrementing.
+
+Prefix (++x): Returns the value after incrementing.
+
+javascript
+let x = 5;
+console.log(x++); // 5 (then x becomes 6)
+console.log(++x); // 7 (x is incremented first)
+
+
+
+
+
+
+
+🔽 Decrement Operator (--)
+Subtracts 1 from the value of a variable.
+
+Postfix (x--): Returns the value before decrementing.
+
+Prefix (--x): Returns the value after decrementing.
+
+javascript
+let y = 10;
+console.log(y--); // 10 (then y becomes 9)
+console.log(--y); // 8 (y is decremented first)
+🧠 Use Cases
+Loop counters (for, while)
+
+Toggling values
+
+Tracking scores or steps

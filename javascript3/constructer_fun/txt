@@ -1,0 +1,46 @@
+Constructer Function in js
+
+
+In JavaScript, a constructor function is a special type of function used to create and initialize multiple objects with the same structure. Think of it as a blueprint for building objects—like a cookie cutter for cookies 🍪.
+
+
+
+🧱 Basic Syntax
+javascript
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+  this.greet = function () {
+    console.log(`Hi, I'm ${this.name} and I'm ${this.age} years old.`);
+  };
+}
+
+const person1 = new Person("Aarav", 25);
+const person2 = new Person("Riya", 30);
+
+person1.greet(); // Hi, I'm Aarav and I'm 25 years old.
+person2.greet(); // Hi, I'm Riya and I'm 30 years old.
+🧠 Key Concepts
+this keyword: Refers to the new object being created.
+
+new keyword: Used to create an instance of the object.
+
+Capitalized name: By convention, constructor functions start with a capital letter (e.g., Person).
+
+🧰 Why Use Constructor Functions?
+To avoid repeating code when creating similar objects.
+
+To encapsulate properties and methods inside reusable templates.
+
+To support object-oriented programming patterns in JavaScript.
+
+🧪 Bonus: Adding Methods via Prototype
+To avoid duplicating methods for every object:
+
+javascript
+Person.prototype.sayBye = function () {
+  console.log(`${this.name} says goodbye!`);
+};
+
+person1.sayBye(); // Aarav says goodbye!
+Constructor functions were the go-to way to create objects before ES6 introduced class syntax. Want to see how this compares to modern JavaScript classes or how inheritance works with constructors

@@ -1,0 +1,71 @@
+what is function ?
+
+
+In JavaScript, a function is a reusable block of code designed to perform a specific task. Think of it like a mini-program within your program—you define it once, and then you can run (or “call”) it whenever you need.
+
+🧱 Basic Syntax
+javascript
+function greet(name) {
+  console.log(`Hello, ${name}!`);
+}
+
+
+
+
+
+
+
+greet("Aarav"); // Output: Hello, Aarav!
+function is the keyword
+
+
+
+
+
+
+
+
+
+greet is the function name
+
+name is a parameter (input)
+
+The code inside {} runs when the function is called
+
+
+
+
+
+
+🧠 Why Use Functions?
+Avoid repetition: Write once, use many times
+
+Organize code: Break complex tasks into smaller steps
+
+Improve readability: Give meaningful names to actions
+
+Enable reuse: Use the same logic with different inputs
+
+
+
+
+
+
+🧪 Function Types 
+Type	                                                            Example
+Function Declaration	                               function add(a, b) { return a + b; }
+Function Expression	                                  const add = function(a, b) { return a + b; }
+Arrow Function (ES6)	                                      const add = (a, b) => a + b;
+Anonymous Function	                                            setTimeout(function() { ... }, 1000);
+Immediately Invoked Function Expression (IIFE)                	(function() { ... })();
+
+
+
+
+
+
+
+
+
+
+Functions are the heart of JavaScript logic—from simple math to handling user interactions and building entire apps. Want to dive into arrow functions, parameters vs arguments, or how this behaves inside functions
